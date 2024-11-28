@@ -138,11 +138,11 @@ const Projects = () => {
                 selectedProject && (
                     <div
                         className="
-    fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 sm:h-auto  mx-auto sm:p-6 p-4"
+    fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 sm:h-auto mx-auto sm:p-6 p-4"
                         onClick={closeModal}
                     >
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[440px] sm:p-6 p-2 relative "
+                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[480px] sm:p-6 p-2 relative "
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
@@ -155,17 +155,17 @@ const Projects = () => {
                             >
                                 ×
                             </button>
-                            <h3 className="sm:text-2xl text-lg font-bold text-gray-800 mb-4">
+                            <h3 className="sm:text-2xl text-lg font-bold text-gray-800 ">
                                 {selectedProject.title}
                             </h3>
-                            <p className="text-gray-950 mb-1 whitespace-pre-line ">
+                            <p className="text-gray-950 whitespace-pre-line ">
                                 {selectedProject.description}
                             </p>
                             <a
                                 href={selectedProject.weblink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-950 "
+                                className="text-gray-950 w-full"
                             >
                                 website: <u>{selectedProject.weblink}</u>
                             </a>
@@ -175,7 +175,7 @@ const Projects = () => {
                                     href={selectedProject.githubFrontend}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
                                 >
                                     GitHub Frontend
                                 </a>
@@ -184,7 +184,7 @@ const Projects = () => {
                                     href={selectedProject.githubBackend}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
                                 >
                                     GitHub Backend
                                 </a>
