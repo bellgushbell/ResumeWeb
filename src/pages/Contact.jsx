@@ -49,7 +49,7 @@ function Contact() {
 
     return (
         <div className="max-w-6xl mx-auto p-8 bg-gradient-to-b from-gray-50 to-gray-100">
-            {/* Header */}
+
             <motion.h2
                 className="text-4xl font-semibold text-center mb-10 "
                 initial={{ opacity: 0, y: -30 }}
@@ -67,22 +67,22 @@ function Contact() {
                 transition={{ duration: 0.8 }}
             >
                 <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-gray-800">Contact Information</h3>
+                    <h3 className="text-xl font-bold text-gray-800 ">Contact Information</h3>
                     <p className="flex items-center">
-                        <strong className="text-gray-700 mr-2">Email:</strong>
-                        <a href="mailto:gushbellpiriyapong@gmail.com" className="text-blue-600 hover:underline">
+                        <strong className="text-gray-700 mr-2 sm:text-lg text-sm">Email:</strong>
+                        <a href="mailto:gushbellpiriyapong@gmail.com" className="text-blue-600 hover:underline sm:text-lg text-sm">
                             gushbellpiriyapong@gmail.com
                         </a>
                     </p>
                     <p className="flex items-center">
-                        <strong className="text-gray-700 mr-2">Phone:</strong>
-                        <span className="text-blue-600">096-3034756</span>
+                        <strong className="text-gray-700 mr-2 sm:text-lg text-sm">Phone:</strong>
+                        <span className="text-blue-600 sm:text-lg text-sm">096-3034756</span>
                     </p>
                     <p className="flex items-center">
-                        <strong className="text-gray-700 mr-2">LinkedIn:</strong>
+                        <strong className="text-gray-700 mr-2 sm:text-lg text-sm">LinkedIn:</strong>
                         <a
                             href="https://www.linkedin.com/in/piriyapongbell/"
-                            className="text-blue-600 hover:underline"
+                            className="text-blue-600 hover:underline sm:text-lg text-sm"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
@@ -90,12 +90,12 @@ function Contact() {
                         </a>
                     </p>
                     <p className="flex items-center">
-                        <strong className="text-gray-700 mr-2">GitHub:</strong>
+                        <strong className="text-gray-700 mr-2 sm:text-lg text-sm">GitHub:</strong>
                         <a
                             href="https://github.com/bellgushbell"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-blue-600 hover:underline"
+                            className="text-blue-600 hover:underline sm:text-lg text-sm"
                         >
                             github.com/bellgushbell
                         </a>
@@ -103,19 +103,19 @@ function Contact() {
                 </div>
             </motion.div>
 
-            {/* Spacer */}
+
             <div className="my-10"></div>
 
-            {/* Contact Form */}
+
             <motion.div
-                className="bg-gradient-to-r from-white to-gray-50 p-8 rounded-lg shadow-2xl"
+                className="bg-gradient-to-r from-white to-gray-50 p-8 rounded-lg shadow-2xl "
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
             >
                 <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
                     <div>
-                        <label htmlFor="name" className="block text-lg font-medium text-gray-700">
+                        <label htmlFor="name" className="block text-lg font-medium text-gray-700 ">
                             Name
                         </label>
                         <input

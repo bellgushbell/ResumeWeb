@@ -118,7 +118,7 @@ const Projects = () => {
                                         {project.title}
                                     </h3>
                                     <button
-                                        onClick={() => openModal(project)}  // ฟังก์ชันที่ใช้เปิด modal
+                                        onClick={() => openModal(project)}
                                         className="mt-5 bg-gradient-to-r from-blue-500 to-indigo-700 text-white py-2 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(30,144,255,0.4),0_4px_15px_rgba(0,0,255,0.6),0_4px_15px_rgba(0,0,139,0.4)]"
                                     >
                                         View Details
@@ -132,59 +132,62 @@ const Projects = () => {
             </div>
 
             {/* Modal */}
-            {selectedProject && (
-                <div
-                    className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-                    onClick={closeModal}
-                >
-                    <motion.div
-                        className="bg-white rounded-lg shadow-lg w-11/12 md:w-1/2 p-6 relative"
-                        onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside modal
-                        initial={{ scale: 0.8, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 1 }}
-                        exit={{ scale: 0.8, opacity: 0 }}
-                        transition={{ duration: 0.3 }}
+            {
+                selectedProject && (
+                    <div
+                        className="
+    fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 sm:h-auto  mx-auto sm:p-6 p-4"
+                        onClick={closeModal}
                     >
-                        <button
-                            onClick={closeModal}
-                            className="absolute top-3 right-3 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600"
+                        <motion.div
+                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[440px] sm:p-6 p-2 relative "
+                            onClick={(e) => e.stopPropagation()}
+                            initial={{ scale: 0.8, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            exit={{ scale: 0.8, opacity: 0 }}
+                            transition={{ duration: 0.3 }}
                         >
-                            ×
-                        </button>
-                        <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                            {selectedProject.title}
-                        </h3>
-                        <p className="text-gray-950 mb-10 whitespace-pre-line ">
-                            {selectedProject.description}
-                        </p>
-                        <div className="flex gap-10 justify-center">
-                            <a
-                                href={selectedProject.githubFrontend}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-2 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                            <button
+                                onClick={closeModal}
+                                className="absolute top-3 right-3 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600"
                             >
-                                GitHub Frontend
-                            </a>
+                                ×
+                            </button>
+                            <h3 className="sm:text-2xl text-lg font-bold text-gray-800 mb-4">
+                                {selectedProject.title}
+                            </h3>
+                            <p className="text-gray-950 mb-10 whitespace-pre-line ">
+                                {selectedProject.description}
+                            </p>
+                            <div className="flex gap-10 justify-center">
+                                <a
+                                    href={selectedProject.githubFrontend}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                >
+                                    GitHub Frontend
+                                </a>
 
-                            <a
-                                href={selectedProject.githubBackend}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="bg-gradient-to-r from-amber-700 to-amber-950 text-white py-2 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
-                            >
-                                GitHub Backend
-                            </a>
+                                <a
+                                    href={selectedProject.githubBackend}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-3 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                >
+                                    GitHub Backend
+                                </a>
 
 
 
-                        </div>
+                            </div>
 
 
-                    </motion.div>
-                </div>
-            )}
-        </motion.div>
+                        </motion.div>
+                    </div>
+                )
+            }
+        </motion.div >
     );
 };
 

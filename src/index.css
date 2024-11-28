@@ -6,23 +6,3 @@
     transform: rotateY(180deg);
 }
 
-/* iPhone SE */
-@media (max-width: 375px) {
-    body {
-        font-size: 14px;
-    }
-}
-
-/* iPhone 12/13 */
-@media (max-width: 390px) {
-    body {
-        font-size: 16px;
-    }
-}
-
-/* iPhone 12 Pro Max */
-@media (max-width: 428px) {
-    body {
-        font-size: 18px;
-    }
-}

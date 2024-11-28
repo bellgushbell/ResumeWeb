@@ -13,7 +13,7 @@ const Navbar = () => {
     ];
 
     return (
-        <div className="fixed top-0 left-0 right-0 w-2/3 mx-auto z-50">
+        <div className="fixed top-0 left-0 right-0 md:w-2/3 mx-auto z-50 sm:w-full">
 
             <div className="relative mx-auto">
                 {/* Gradient Navigation Bar */}

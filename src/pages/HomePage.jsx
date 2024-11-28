@@ -53,7 +53,7 @@ function HomePage() {
             animate="visible"
             variants={containerVariants}
         >
-            <div className="flex flex-col items-center justify-center text-center pt-20 pb-5">
+            <div className="flex flex-col items-center justify-center text-center pt-20 pb-5 ">
                 <motion.div
                     className="w-48 h-48 bg-gray-300 rounded-full flex items-center justify-center shadow-xl overflow-hidden"
                     whileHover={{ scale: 1.1 }}
@@ -76,7 +76,7 @@ function HomePage() {
                         }}
                     />
                 </motion.div>
-                <h1 className="mt-6 text-4xl font-extrabold text-gray-600">
+                <h1 className="mt-6 text-2xl font-extrabold text-gray-600 sm:text-4xl ">
                     Piriyapong Bunjusook
                 </h1>
                 <motion.div
@@ -88,7 +88,7 @@ function HomePage() {
                     {displayedText}
                     <span className="blinking-cursor">|</span>
                 </motion.div>
-                <p className="mt-4 text-lg text-gray-600 max-w-2xl leading-relaxed font-medium">
+                <p className="mt-4 text-lg text-gray-600 max-w-2xl leading-relaxed font-medium sm:pl-0 sm:pr-0 pl-5 pr-5 ">
                     I am a motivated individual aspiring to be a Full Stack Developer with strong problem-solving skills and experience in front-end and back-end development. Committed to improving my skills and contributing to the organization’s growth.
                 </p>
             </div>
