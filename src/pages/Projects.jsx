@@ -169,12 +169,12 @@ const Projects = () => {
                                 website: <u>{selectedProject.weblink}</u>
                             </a>
 
-                            <div className="flex gap-8 justify-center mt-3">
+                            <div className="flex gap-5 justify-center mt-3">
                                 <a
                                     href={selectedProject.githubFrontend}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-3 px-3 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
                                 >
                                     GitHub Frontend
                                 </a>
@@ -183,7 +183,7 @@ const Projects = () => {
                                     href={selectedProject.githubBackend}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-3 px-3 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
                                 >
                                     GitHub Backend
                                 </a>
