@@ -154,7 +154,7 @@ const Projects = () => {
                             >
                                 ×
                             </button>
-                            <h3 className="sm:text-2xl text-lg font-bold text-gray-800 ">
+                            <h3 className="sm:text-2xl text-base font-bold text-gray-800 ">
                                 {selectedProject.title}
                             </h3>
                             <p className="text-gray-950 whitespace-pre-line ">
@@ -164,7 +164,7 @@ const Projects = () => {
                                 href={selectedProject.weblink}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="text-gray-950 w-full"
+                                className="text-gray-950 whitespace-pre-line"
                             >
                                 website: <u>{selectedProject.weblink}</u>
                             </a>
