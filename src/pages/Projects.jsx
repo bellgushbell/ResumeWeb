@@ -21,8 +21,7 @@ const Projects = () => {
             id: 2,
             title: "Group Project: Hotel Booking",
             description: `
-                Oct 2024 – Oct 2024
-               • Developed a booking system with location search, filters, price comparison, and discount codes.
+                Oct 2024 – Oct 2024  • Developed a booking system with location search, filters, price comparison, and discount codes.
 • Integrated Stripe API for payments, Google Maps API for real-time positioning, and React Date Range for selecting check-in/out dates.
 • Created a 3D card effect for promotions to boost engagement
 • Built image sliders with Swiper and Slick Carousel, customizing Toastify notifications with SweetAlert2.
@@ -142,7 +141,7 @@ const Projects = () => {
                         onClick={closeModal}
                     >
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[480px] sm:p-6 p-2 relative "
+                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[520px] sm:p-6 p-2 relative "
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
