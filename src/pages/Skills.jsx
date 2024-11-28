@@ -105,7 +105,7 @@ function Skills() {
                                     alt={skill.name}
                                     className="w-16 h-16 mb-4 "
                                 />
-                                <h3 className="text-lg font-bold text-gray-800 text-inherit">
+                                <h3 className="sm:text-lg text-base font-bold text-gray-800 text-inherit">
                                     {skill.name}
                                 </h3>
                             </div>
