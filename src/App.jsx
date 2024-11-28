@@ -4,6 +4,7 @@ import HomePage from "./pages/HomePage";
 import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
+import Experiences from "./pages/Experiences";
 
 const App = () => {
   useEffect(() => {
@@ -107,6 +108,9 @@ const App = () => {
         </section>
         <section id="projects" className="min-h-screen flex justify-center items-center">
           <Projects />
+        </section>
+        <section id="experience" className="min-h-screen flex justify-center items-center">
+          <Experiences />
         </section>
         <section id="contact" className="min-h-screen flex justify-center items-center">
           <Contact />

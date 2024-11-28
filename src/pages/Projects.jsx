@@ -12,7 +12,7 @@ const Projects = () => {
 • Introduced slide-to-pay to prevent accidental payments, supporting mobile.
 • Provided admin tools for product management, stock, payment approval, and analytics with charts for sales, abandoned carts
             `,
-            videoUrl: "/src/assets/HotelFinalReal.mp4",
+            videoUrl: "https://drive.google.com/file/d/16_UQstLrwOUcKPPeLFzGCoCzT-7vKBe7/preview",
             githubFrontend: "https://github.com/bellgushbell/ProjectPhoneCaseFrontEnd",
             githubBackend: "https://github.com/bellgushbell/ProjectPhoneCaseBackend",
         },
@@ -27,7 +27,7 @@ const Projects = () => {
 • Built image sliders with Swiper and Slick Carousel, customizing Toastify notifications with SweetAlert2.
 • Enabled Google login, real-time admin chat using OAuth2 and Socket.io
             `,
-            videoUrl: "/src/assets/HotelFinalReal.mp4",
+            videoUrl: "https://drive.google.com/file/d/1RwZx_ffUNiGvvEVhMifri0uxIgOKhkcE/preview",
             githubFrontend: "https://github.com/NuttavichBig/CC18-GroupProject-Client",
             githubBackend: "https://github.com/NuttavichBig/CC18-GroupProject-Server",
         },
@@ -106,14 +106,13 @@ const Projects = () => {
                             onClick={() => openModal(project)}
                         >
                             <div className="relative flex flex-col">
-                                <video
+                                <iframe
                                     src={project.videoUrl}
-                                    controls
-                                    className="w-full h-48 object-cover"
-                                    onError={(e) =>
-                                        (e.target.src = "https://via.placeholder.com/400x300")
-                                    }
-                                />
+                                    className="w-full h-48"
+                                    allow="autoplay"
+                                    style={{ border: 0 }}
+                                ></iframe>
+
                                 <div className="p-4 text-center">
                                     <h3 className="text-xl font-bold text-gray-800">
                                         {project.title}

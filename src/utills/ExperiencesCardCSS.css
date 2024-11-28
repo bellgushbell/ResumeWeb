@@ -1,0 +1,58 @@
+.border-gradient {
+    border: 3px solid transparent;
+    border-radius: 30px;
+    background-image: linear-gradient(
+        45deg,
+        rgba(0, 0, 255, 0.5),
+        rgba(128, 128, 128, 0.5),
+        rgba(128, 0, 128, 0.5),
+        rgba(255, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 10px auto;
+    max-width: 95%; /* จำกัดความกว้างของการ์ด */
+    transition: transform 0.3s, box-shadow 0.3s, background 0.5s ease-in-out;
+    overflow: hidden; /* ตัดส่วนที่เกิน */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2), 
+        15px 15px 30px rgba(0, 0, 0, 0.1); /* เปลี่ยนเงาไปทางขวา */
+}
+
+.border-gradient:hover {
+    transform: scale(1.05) translateY(-10px);
+
+    box-shadow: 0 0 10px rgba(255, 0, 0, 1),
+        0 0 0.5px rgba(255, 127, 0, 1),
+        0 0 1px rgba(255, 255, 0, 1),
+        0 0 2px rgba(0, 255, 0, 1),
+        0 0 3px rgba(0, 255, 255, 1),
+        0 0 4px rgba(0, 0, 255, 1),
+        0 0 5px rgba(127, 0, 255, 1),
+        10px 10px 20px rgba(0, 0, 0, 0.3); /* เปลี่ยนเงาทางขวา */
+}
+
+.inner-card {
+    background: linear-gradient(135deg, #f9f9f9, #e0e0e0); 
+    border-radius: 0px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0;
+    flex: 1;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), /* เงาเบาไปทางขวาล่าง */
+        8px 8px 15px rgba(0, 0, 0, 0.05);        /* เงาเสริม */
+    overflow: hidden;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
