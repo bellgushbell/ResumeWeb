@@ -103,7 +103,7 @@ function Skills() {
                                 <img
                                     src={skill.image}
                                     alt={skill.name}
-                                    className="w-16 h-16 mb-4 "
+                                    className="sm:w-16 sm:h-16 mb-4 "
                                 />
                                 <h3 className="sm:text-lg text-base font-bold text-gray-800 text-inherit">
                                     {skill.name}

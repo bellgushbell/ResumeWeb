@@ -13,6 +13,7 @@ const Projects = () => {
 • Provided admin tools for product management, stock, payment approval, and analytics with charts for sales, abandoned carts
             `,
             videoUrl: "https://drive.google.com/file/d/16_UQstLrwOUcKPPeLFzGCoCzT-7vKBe7/preview",
+            weblink: "https://projectphonecasefrontend.onrender.com",
             githubFrontend: "https://github.com/bellgushbell/ProjectPhoneCaseFrontEnd",
             githubBackend: "https://github.com/bellgushbell/ProjectPhoneCaseBackend",
         },
@@ -28,6 +29,7 @@ const Projects = () => {
 • Enabled Google login, real-time admin chat using OAuth2 and Socket.io
             `,
             videoUrl: "https://drive.google.com/file/d/1RwZx_ffUNiGvvEVhMifri0uxIgOKhkcE/preview",
+            weblink: "https://hotel-book-client.onrender.com",
             githubFrontend: "https://github.com/NuttavichBig/CC18-GroupProject-Client",
             githubBackend: "https://github.com/NuttavichBig/CC18-GroupProject-Server",
         },
@@ -156,10 +158,19 @@ const Projects = () => {
                             <h3 className="sm:text-2xl text-lg font-bold text-gray-800 mb-4">
                                 {selectedProject.title}
                             </h3>
-                            <p className="text-gray-950 mb-10 whitespace-pre-line ">
+                            <p className="text-gray-950 mb-1 whitespace-pre-line ">
                                 {selectedProject.description}
                             </p>
-                            <div className="flex gap-10 justify-center">
+                            <a
+                                href={selectedProject.weblink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-gray-950 "
+                            >
+                                website: <u>{selectedProject.weblink}</u>
+                            </a>
+
+                            <div className="flex gap-10 justify-center mt-3">
                                 <a
                                     href={selectedProject.githubFrontend}
                                     target="_blank"
