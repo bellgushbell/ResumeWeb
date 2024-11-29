@@ -32,6 +32,31 @@ const Projects = () => {
             githubFrontend: "https://github.com/NuttavichBig/CC18-GroupProject-Client",
             githubBackend: "https://github.com/NuttavichBig/CC18-GroupProject-Server",
         },
+        {
+            id: 3,
+            title: "Individual Project: Pokedex",
+            description: `
+            A TypeScript-based Pokedex project that fetches Pokemon data from the PokéAPI and displays it in a user-friendly format, 
+            categorizing Pokemon by type and offering a fully responsive design. Developed using React, Sass, Tailwind CSS, and Axios for API calls and state management with Zustand. 
+            To enhance search and sorting capabilities, the project utilizes match-sorter and sort-by libraries, allowing users to filter and organize Pokemon by name, type, or other criteria. 
+            LocalForage is employed for local data storage.
+            `,
+            videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
+            weblink: "https://pokedexproject.onrender.com",
+            githubFrontend: "https://github.com/bellgushbell/PokedexProject",
+
+        },
+        {
+            id: 4,
+            title: "Individual Project: Eco Pandora Box",
+            description: `
+            กำลังทำ
+            `,
+            // videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
+            // weblink: "https://pokedexproject.onrender.com",
+            // githubFrontend: "https://github.com/bellgushbell/PokedexProject",
+
+        },
     ];
 
     const [selectedProject, setSelectedProject] = useState(null);
@@ -170,24 +195,26 @@ const Projects = () => {
                             </a>
 
                             <div className="flex gap-5 justify-center mt-3">
-                                <a
-                                    href={selectedProject.githubFrontend}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
-                                >
-                                    GitHub Frontend
-                                </a>
-
-                                <a
-                                    href={selectedProject.githubBackend}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
-                                >
-                                    GitHub Backend
-                                </a>
-
+                                {selectedProject.githubFrontend && (
+                                    <a
+                                        href={selectedProject.githubFrontend}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-[#f08a4b] to-[#e05b3c] text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    >
+                                        GitHub Frontend
+                                    </a>
+                                )}
+                                {selectedProject.githubBackend && (
+                                    <a
+                                        href={selectedProject.githubBackend}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="mb-1 sm:text-lg text-sm bg-gradient-to-r from-amber-700 to-amber-950 text-white py-2 px-2 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(240,138,75,0.4),0_4px_15px_rgba(240,138,75,0.6),0_4px_15px_rgba(224,91,60,0.4)]"
+                                    >
+                                        GitHub Backend
+                                    </a>
+                                )}
 
 
                             </div>
