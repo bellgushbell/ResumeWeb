@@ -136,6 +136,7 @@ const Projects = () => {
                                     src={project.videoUrl}
                                     className="w-full h-48"
                                     allow="autoplay"
+                                    allowFullScreen
                                     style={{ border: 0 }}
                                 ></iframe>
 
