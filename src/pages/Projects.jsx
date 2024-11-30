@@ -52,7 +52,7 @@ const Projects = () => {
             description: `
             กำลังทำ
             `,
-            // videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
+            videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
             // weblink: "https://pokedexproject.onrender.com",
             // githubFrontend: "https://github.com/bellgushbell/PokedexProject",
 
@@ -81,15 +81,27 @@ const Projects = () => {
         const rotateX = ((centerY - y) / centerY) * 10;
         const rotateY = ((centerX - x) / centerX) * -10;
 
-        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-        shadow.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(-50px)`;
+        card.style.zIndex = "2"; //  z-index เพื่อดึงการ์ดมาด้านหน้า
+        shadow.style.zIndex = "1"; // ให้เงาอยู่ด้านล่างเสมอ
+
+        card.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
+        shadow.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(-50px)`;
+
+
+        // การตรวจสอบเพื่อลดการกระตุกเมื่อเมาส์อยู่บริเวณขอบ
+        card.style.willChange = 'transform';
+        shadow.style.willChange = 'transform';
     };
 
     const handleMouseLeave = (index) => {
         const card = document.getElementById(`project-card-${index}`);
+        card.style.transition = "transform 0.5s ease-out"; //  transition เพื่อความนุ่มนวล
         const shadow = document.getElementById(`shadow-card-${index}`);
         card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
         shadow.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(-50px)";
+
+        card.style.zIndex = "0";
+        shadow.style.zIndex = "0";
     };
 
     return (
