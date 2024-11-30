@@ -124,7 +124,7 @@ const App = () => {
         <Navbar />
         {/* ส่วนของปุ่มToggleแปลภาษา */}
 
-        <div className="flex justify-end items-center ml-auto p-5 mt-5">
+        <div className="absolute flex justify-end items-center p-5 right-10 top-10 ">
           <span className="mr-2">{i18n.language === "th" ? "TH" : "EN"}</span>
           <Switch
             onChange={toggleLanguage}
