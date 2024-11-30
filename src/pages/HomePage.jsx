@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import profilepic from "../assets/profilepic.png";
+import { useTranslation } from "react-i18next";
 
 const roles = ["Frontend Developer", "Backend Developer", "UI/UX Designer"];
 
 function HomePage() {
+    const { t } = useTranslation();
     const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
     const [displayedText, setDisplayedText] = useState("");
     const [typing, setTyping] = useState(true);
@@ -101,7 +103,7 @@ function HomePage() {
                         variants={itemVariants} whileHover={{ scale: 1.05 }}
                     >
                         <h3 className="text-base font-semibold text-gray-800 border-b-2 pb-2 border-gray-200">
-                            Personal Details
+                            {t("Personal Details")}
                         </h3>
                         <motion.ul
                             className="mt-2 space-y-1 text-sm text-gray-600"

@@ -5,8 +5,32 @@ import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Experiences from "./pages/Experiences";
+import { useTranslation } from "react-i18next";
+import './i18n';
+import Switch from "react-switch";
 
 const App = () => {
+
+
+  const { i18n } = useTranslation();
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('language');
+    if (!storedLanguage) {
+      i18n.changeLanguage("en");
+      localStorage.setItem('language', 'en');  // เก็บการตั้งค่าภาษาใน localStorage
+    } else {
+      i18n.changeLanguage(storedLanguage);  // ถ้ามีการตั้งค่าภาษาไว้แล้วให้ใช้ภาษานั้น
+    }
+  }, [i18n]);
+
+  const toggleLanguage = (checked) => {
+    const newLanguage = checked ? "en" : "th";
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem('language', newLanguage); // เก็บภาษาใน localStorage
+  };
+
+
   useEffect(() => {
     if (window.particlesJS) {
       console.log("Particles.js is initializing...");
@@ -96,10 +120,24 @@ const App = () => {
           backgroundColor: "#F7FAFC" // สีพื้นหลังเทาอ่อน
         }}
       ></div>
-
-      {/* คอนเทนต์หลัก */}
       <div className="relative z-10">
         <Navbar />
+        {/* ส่วนของปุ่มToggleแปลภาษา */}
+
+        <div className="flex justify-end items-center ml-auto p-5 mt-5">
+          <span className="mr-2">{i18n.language === "th" ? "TH" : "EN"}</span>
+          <Switch
+            onChange={toggleLanguage}
+            checked={i18n.language === "en"}
+            onColor="#4CAF50"
+            offColor="#ccc"
+            uncheckedIcon={false}
+            checkedIcon={false}
+            height={20}
+            width={40}
+          />
+        </div>
+
         <section id="home" className="min-h-screen flex justify-center items-center">
           <HomePage />
         </section>
