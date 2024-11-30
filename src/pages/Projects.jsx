@@ -187,7 +187,7 @@ const Projects = () => {
                         onClick={closeModal}
                     >
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[400px] sm:h-auto h-[520px] sm:p-6 p-2 relative "
+                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[350px] sm:h-auto h-[420px] sm:p-6 p-2 relative "
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
@@ -196,7 +196,7 @@ const Projects = () => {
                         >
                             <button
                                 onClick={closeModal}
-                                className="absolute top-3 right-3 bg-red-500 text-white rounded-full w-8 h-8 flex items-center justify-center hover:bg-red-600"
+                                className="absolute top-0 right-0 rounded-full  text-black w-8 h-8 flex items-center justify-center hover:bg-red-600"
                             >
                                 ×
                             </button>
@@ -206,8 +206,9 @@ const Projects = () => {
                             <p className="text-gray-950 whitespace-pre-line ">
                                 {selectedProject.description}
                             </p>
+                            {/* ไลบารี่วิ่ง */}
                             <div className="relative overflow-hidden whitespace-nowrap">
-                                <div className="animate-scroll inline-block">
+                                <div className="animate-scroll inline-block sm:mb-5 sm:mt-5">
                                     {selectedProject.libraries &&
                                         selectedProject.libraries.map((lib, libIndex) => (
                                             <span key={libIndex} className="mx-4 text-sm font-medium text-gray-700">
