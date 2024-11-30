@@ -52,7 +52,7 @@ const Projects = () => {
             description: `
             กำลังทำ
             `,
-            videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
+            // videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
             // weblink: "https://pokedexproject.onrender.com",
             // githubFrontend: "https://github.com/bellgushbell/PokedexProject",
 

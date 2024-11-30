@@ -123,6 +123,9 @@ function HomePage() {
                                 <strong>Nationality:</strong> Thai
                             </motion.li>
                             <motion.li variants={itemVariants} whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}>
+                                <strong>Languages:</strong> Thai (Native), English (Basic)
+                            </motion.li>
+                            <motion.li variants={itemVariants} whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}>
                                 <strong>Date of Birth:</strong> March 26, 1996
                             </motion.li>
                         </motion.ul>
@@ -133,7 +136,7 @@ function HomePage() {
                         variants={itemVariants} whileHover={{ scale: 1.05 }}
                     >
                         <h3 className="text-base font-semibold text-gray-800 border-b-2 pb-2 border-gray-200" >
-                            Additional Details
+                            Education
                         </h3>
                         <motion.ul
                             className="mt-2 space-y-1 text-sm text-gray-600"
@@ -145,13 +148,16 @@ function HomePage() {
                                 variants={itemVariants}
                                 whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}
                             >
-                                <strong>Languages:</strong> Thai (Native), English (Basic)
+                                <strong>High School Diploma:</strong> Surawittayakarn School (Provincial School of Surin), Thailand <br></br>   2007 - 2013
                             </motion.li>
                             <motion.li
                                 variants={itemVariants}
                                 whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}
                             >
-                                <strong>Interests:</strong> AI Research, Software Development
+                                <strong>Bachelor of Computer Engineering:</strong> Suranaree University of Technology, Nakhon Ratchasima 2014 - 2018 <br></br>Graduated a 4-year program with a unique 3-term per year
+                                system, emphasizing intensive learning and including exams
+                                at the end of each term, providing an intensive learning
+                                experience.
                             </motion.li>
                         </motion.ul>
                     </motion.div>
@@ -186,6 +192,14 @@ function HomePage() {
                                 whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}
                             >
                                 ✔️ Teamwork
+                            </motion.li>
+                            <br></br>
+                            <motion.li
+                                variants={itemVariants}
+                                whileHover={{ scale: 1.05, boxShadow: "0px 4px 12px rgba(0,0,0,0.3)" }}
+                            >
+
+                                <strong>Interest:</strong> AI Research, Software Developer , UX UI Advance, Cloud Computing
                             </motion.li>
                         </motion.ul>
                     </motion.div>
