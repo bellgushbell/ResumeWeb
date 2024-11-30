@@ -187,7 +187,7 @@ const Projects = () => {
                         onClick={closeModal}
                     >
                         <motion.div
-                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[350px] sm:h-auto h-[420px] sm:p-6 p-2 relative "
+                            className="bg-white rounded-lg shadow-lg sm:w-2/3 w-[350px] sm:h-auto h-[450px] sm:p-6 p-2 relative "
                             onClick={(e) => e.stopPropagation()}
                             initial={{ scale: 0.8, opacity: 0 }}
                             animate={{ scale: 1, opacity: 1 }}
