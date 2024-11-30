@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Draggable from "react-draggable";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const skills = [
     { id: "1", name: "HTML", image: "/assets/html-icon.png" },
@@ -22,6 +23,7 @@ const skills = [
 ];
 
 function Skills() {
+    const { t } = useTranslation();
     const [items, setItems] = useState(skills);
 
     // State for tracking position of the card after drag
@@ -71,7 +73,7 @@ function Skills() {
             }}
         >
             <h3 className="flex justify-center font-semibold text-gray-800 mb-5 text-3xl">
-                SKILLS
+                {t("SKILLS")}
             </h3>
             <motion.div
                 initial="hidden"

@@ -2,9 +2,12 @@ import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import Swal from "sweetalert2";
-
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+
+    const { t } = useTranslation();
+
     const formRef = useRef();
 
     const sendEmail = (e) => {
@@ -56,7 +59,7 @@ function Contact() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
             >
-                Contact Me
+                {t("Contact Me")}
             </motion.h2>
 
             {/* Contact Information */}
@@ -67,7 +70,7 @@ function Contact() {
                 transition={{ duration: 0.8 }}
             >
                 <div className="space-y-4">
-                    <h3 className="text-xl font-bold text-gray-800 ">Contact Information</h3>
+                    <h3 className="text-xl font-bold text-gray-800 ">{t("Contact Information")}</h3>
                     <p className="flex items-center">
                         <strong className="text-gray-700 mr-2 sm:text-lg text-sm">Email:</strong>
                         <a href="mailto:gushbellpiriyapong@gmail.com" className="text-blue-600 hover:underline sm:text-lg text-sm">
@@ -115,8 +118,11 @@ function Contact() {
             >
                 <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
                     <div>
+                        <div className="block text-xl font-bold  text-gray-800 mb-10">
+                            {t("Send Message To Me")}
+                        </div>
                         <label htmlFor="name" className="block text-lg font-medium text-gray-700 ">
-                            Name
+                            {t("Name")}
                         </label>
                         <input
                             type="text"
@@ -129,7 +135,7 @@ function Contact() {
                     </div>
                     <div>
                         <label htmlFor="email" className="block text-lg font-medium text-gray-700">
-                            Email
+                            {t("Email")}
                         </label>
                         <input
                             type="email"
@@ -142,7 +148,7 @@ function Contact() {
                     </div>
                     <div>
                         <label htmlFor="message" className="block text-lg font-medium text-gray-700">
-                            Message
+                            {t("Message")}
                         </label>
                         <textarea
                             id="message"
@@ -155,7 +161,7 @@ function Contact() {
                     </div>
                     <div className="flex justify-center">
                         <button className="bg-gradient-to-r from-gray-500 to-gray-700 text-white py-2 px-4 rounded-xl font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(169,169,169,0.4),0_4px_15px_rgba(169,169,169,0.6),0_4px_15px_rgba(128,128,128,0.4)]">
-                            SEND MESSAGE
+                            {t("SEND MESSAGE")}
                         </button>
 
 

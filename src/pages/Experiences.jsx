@@ -1,48 +1,49 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../utills/ExperiencesCardCSS.css"; // นำเข้าคลาส CSS ที่คุณสร้างไว้
+import { useTranslation } from "react-i18next";
 
 function Experiences() {
+    const { t } = useTranslation();
     const experiences = [
         {
             id: 1,
-            title: "Internship",
+            title: t("Internship"),
 
-            company: "Co-operative Education Program at Teibto Co., Ltd.",
+            company: t("Co-operative Education Program at Teibto Co., Ltd."),
             year: "2018",
             details: [
-                "Gained expertise in NetSuite-ERP customization and workflow development.",
-                "Customized print forms for order and tax processing.",
+                t("Gained expertise in NetSuite-ERP customization and workflow development."), t("Customized print forms for order and tax processing."),
             ],
         },
         {
             id: 2,
-            title: "ERP Consultant",
-            company: "Enterprise Resource Planning at Teibto Co., Ltd.",
+            title: t("ERP Consultant"),
+            company: t("Enterprise Resource Planning Consultant at Teibto Co., Ltd."),
             year: "2019 - 2020",
             details: [
-                "Configured and customized NetSuite ERP for various industries, including AR/AP workflows, roles, and custom Suitelets.",
-                "Collaborated on ERP projects for 'Baywa' and 'Loxley,' importing master data, integrating voucher workflows, and traveling for on-site ERP setup.",
+                t("Configured and customized NetSuite ERP for various industries, including AR/AP workflows, roles, and custom Suitelets of NetSuite."),
+                t("Collaborated on ERP projects for 'Baywa' and 'Loxley,' importing master data, integrating voucher workflows, and traveling for on-site ERP setup."),
             ],
         },
         {
             id: 3,
-            title: "Family Business",
-            company: "Quick Service Shop & Apartment Development",
+            title: t("Family Business"),
+            company: t("Quick Service Shop & Apartment Development"),
             year: "2021 - 2024",
             details: [
-                "Managed and grew the family business during COVID-19 by establishing 'Quick Service' a motorcycle and car repair shop.",
-                "Oversaw planning and construction of a family apartment project on inherited land.",
+                t("Managed and grew the family business during COVID-19 by establishing 'Quick Service' a motorcycle and car repair shop."),
+                t("Oversaw planning and construction of a family apartment project on inherited land."),
             ],
         },
         {
             id: 4,
-            title: "Fullstack JavaScript Bootcamp",
-            company: "Software Park (Thai Programmer Association)",
-            year: "July 2024 – November 2024",
+            title: t("Fullstack JavaScript Bootcamp"),
+            company: t("Software Park (Thai Programmer Association)"),
+            year: t("July 2024 - November 2024"),
             details: [
-                "Completed a 4-month Fullstack JavaScript bootcamp mastering full-stack concepts from basics to advanced.",
-                "Presented during Demo Day real projects like a mobile case shop and a hotel booking system, built with React and Prisma for seamless deployment.",
+                t("Completed a 4-month Fullstack JavaScript bootcamp mastering full-stack concepts from basics to advanced."),
+                t("Presented during Demo Day real projects like a mobile case shop and a hotel booking system, built with React and Prisma for seamless deployment."),
             ],
         },
     ];
@@ -50,7 +51,7 @@ function Experiences() {
     return (
         <div className="max-w-4xl mx-auto p-6">
             <h3 className="flex justify-center font-semibold text-gray-800 mb-10 text-4xl">
-                Experiences
+                {t("Experiences")}
             </h3>
             <div className="space-y-10">
                 {experiences.map((exp, index) => (

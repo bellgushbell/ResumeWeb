@@ -1,60 +1,51 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-
+import { useTranslation } from "react-i18next";
 const Projects = () => {
+    const { t } = useTranslation();
     const projects = [
         {
             id: 1,
-            title: "Individual Project: Phone Case E-Commerce",
-            description: `
-                Oct 2024 – Oct 2024
-               • Built an e-commerce cart with real-time pricing, animations, password reset emails, protected routes, and Framer Motion for smooth transitions.
-• Introduced slide-to-pay to prevent accidental payments, supporting mobile.
-• Provided admin tools for product management, stock, payment approval, and analytics with charts for sales, abandoned carts
-            `,
+            title: t("Individual Project: Phone Case E-Commerce"),
+            description: t("Oct 2024 - Oct 2024 • Built an e-commerce cart with real-time pricing, animations, password reset emails, protected routes, and Framer Motion for smooth transitions. Introduced slide-to-pay to prevent accidental payments, supporting mobile. Provided admin tools for product management, stock, payment approval, and analytics with charts for sales, abandoned carts")
+            ,
             videoUrl: "https://drive.google.com/file/d/16_UQstLrwOUcKPPeLFzGCoCzT-7vKBe7/preview",
             weblink: "https://projectphonecasefrontend.onrender.com",
             githubFrontend: "https://github.com/bellgushbell/ProjectPhoneCaseFrontEnd",
             githubBackend: "https://github.com/bellgushbell/ProjectPhoneCaseBackend",
+            libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "React-Tostify", "NodeMailer", "Cloudinary", "Prisma", "JsonWebToken", "Multer", "Bcryptjs", "Express", "Lottie-react", "joi", "loading", "Chart.js", "Sweetalert2", "DaisyUI", "React-Responsive-Carousel", "Axios"],
         },
         {
             id: 2,
-            title: "Group Project: Hotel Booking",
-            description: `
-                Oct 2024 – Oct 2024  • Developed a booking system with location search, filters, price comparison, and discount codes.
-• Integrated Stripe API for payments, Google Maps API for real-time positioning, and React Date Range for selecting check-in/out dates.
-• Created a 3D card effect for promotions to boost engagement
-• Built image sliders with Swiper and Slick Carousel, customizing Toastify notifications with SweetAlert2.
-• Enabled Google login, real-time admin chat using OAuth2 and Socket.io
-            `,
+            title: t("Group Project: Hotel Booking"),
+            description: t("Oct 2024 - Oct 2024 • Developed a booking system with location search, filters, price comparison, and discount codes. Integrated Stripe API for payments, Google Maps API for real-time positioning, and React Date Range for selecting check-in/out dates. Created a 3D card effect for promotions to boost engagement. Built image sliders with Swiper and Slick Carousel, customizing Toastify notifications with SweetAlert2. Enabled Google login, real-time admin chat using OAuth2 and Socket.io.")
+            ,
             videoUrl: "https://drive.google.com/file/d/1RwZx_ffUNiGvvEVhMifri0uxIgOKhkcE/preview",
             weblink: "https://hotel-book-client.onrender.com",
             githubFrontend: "https://github.com/NuttavichBig/CC18-GroupProject-Client",
             githubBackend: "https://github.com/NuttavichBig/CC18-GroupProject-Server",
+            libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "React-Tostify", "NodeMailer", "Cloudinary", "Prisma", "JsonWebToken", "Multer", "Bcryptjs", "Express", "joi", "Chart.js", "Sweetalert2", "Axios", "Moment", "React-Date-Range", "react-google-autocomplete", "slick-carousel", "socket.io-client", "swiper", "recharts", "Stripe", "OAth", "GoogleAPI", "react-places-autocomplete", "google-auth-library", "haversine-distance", "uuid"],
         },
         {
             id: 3,
-            title: "Individual Project: Pokedex",
-            description: `
-            A TypeScript-based Pokedex project that fetches Pokemon data from the PokéAPI and displays it in a user-friendly format, 
-            categorizing Pokemon by type and offering a fully responsive design. Developed using React, Sass, Tailwind CSS, and Axios for API calls and state management with Zustand. 
-            To enhance search and sorting capabilities, the project utilizes match-sorter and sort-by libraries, allowing users to filter and organize Pokemon by name, type, or other criteria. 
-            LocalForage is employed for local data storage.
-            `,
+            title: t("Individual Project: Pokedex"),
+            description: t("A TypeScript-based Pokedex project that fetches Pokemon data from the PokéAPI and displays it in a user-friendly format, categorizing Pokemon by type and offering a fully responsive design.Developed using React, Sass, Tailwind CSS, and Axios for API calls and state management with Zustand. To enhance search and sorting capabilities, the project utilizes match- sorter and sort - by libraries, allowing users to filter and organize Pokemon by name, type, or other criteria. LocalForage is employed for local data storage."),
             videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
             weblink: "https://pokedexproject.onrender.com",
             githubFrontend: "https://github.com/bellgushbell/PokedexProject",
+            libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "Axios", "react-loading", "localforage", "match-sorter", "react-hook-form", "sort-by", "TypeScript", "sass", "react-router-dom"],
 
         },
         {
             id: 4,
-            title: "Individual Project: Eco Pandora Box",
+            title: t("Individual Project: Eco Pandora Box"),
             description: `
             กำลังทำ
             `,
             // videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
             // weblink: "https://pokedexproject.onrender.com",
             // githubFrontend: "https://github.com/bellgushbell/PokedexProject",
+            libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS"],
 
         },
     ];
@@ -127,7 +118,7 @@ const Projects = () => {
             transition={{ duration: 1 }}
         >
             <h3 className="flex justify-center font-semibold text-gray-800  text-3xl mb-10">
-                PROJECTS
+                {t("PROJECTS")}
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
                 {projects.map((project, index) => (
@@ -171,11 +162,13 @@ const Projects = () => {
                                     <h3 className="text-xl font-bold text-gray-800">
                                         {project.title}
                                     </h3>
+
+
                                     <button
                                         onClick={() => openModal(project)}
                                         className="mt-5 bg-gradient-to-r from-blue-500 to-indigo-700 text-white py-2 px-4 rounded-lg font-bold shadow-lg transition-transform duration-200 cursor-pointer hover:scale-105 hover:shadow-[inset_0_0_8px_rgba(30,144,255,0.4),0_4px_15px_rgba(0,0,255,0.6),0_4px_15px_rgba(0,0,139,0.4)]"
                                     >
-                                        View Details
+                                        {t("View Details")}
                                     </button>
 
                                 </div>
@@ -213,13 +206,24 @@ const Projects = () => {
                             <p className="text-gray-950 whitespace-pre-line ">
                                 {selectedProject.description}
                             </p>
+                            <div className="relative overflow-hidden whitespace-nowrap">
+                                <div className="animate-scroll inline-block">
+                                    {selectedProject.libraries &&
+                                        selectedProject.libraries.map((lib, libIndex) => (
+                                            <span key={libIndex} className="mx-4 text-sm font-medium text-gray-700">
+                                                {lib}
+                                            </span>
+                                        ))}
+                                </div>
+                            </div>
+
                             <a
                                 href={selectedProject.weblink}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-950 whitespace-pre-line"
                             >
-                                website: <u>{selectedProject.weblink}</u>
+                                {t("website")}: <u>{selectedProject.weblink}</u>
                             </a>
 
                             <div className="flex gap-5 justify-center mt-3">

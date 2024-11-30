@@ -6,3 +6,19 @@
     transform: rotateY(180deg);
 }
 
+@keyframes scroll {
+    0% {
+        transform: translateX(20%);
+        /* เริ่มจากจุดเริ่มต้น */
+    }
+
+    100% {
+        transform: translateX(-100%);
+        /* เลื่อนไปซ้ายจนสุด */
+    }
+}
+
+.animate-scroll {
+    display: inline-block;
+    animation: scroll 20s linear infinite;
+}

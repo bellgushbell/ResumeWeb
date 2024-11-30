@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 
+
 const Navbar = () => {
+
     const [activeTab, setActiveTab] = useState("home");
+
 
     const tabs = [
         { id: "home", text: "Home" },
@@ -11,6 +14,7 @@ const Navbar = () => {
         { id: "projects", text: "Projects" },
         { id: "contact", text: "Contact" },
     ];
+
 
     return (
         <div className="fixed top-0 left-0 right-0 md:w-2/3 mx-auto z-50 sm:w-full">
