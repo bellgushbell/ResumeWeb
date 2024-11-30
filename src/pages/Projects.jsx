@@ -69,40 +69,55 @@ const Projects = () => {
         setSelectedProject(null);
     };
 
-    const handleMouseMove = (e, index) => {
+
+
+    const handleMouseMove = (event, index) => {
         const card = document.getElementById(`project-card-${index}`);
         const shadow = document.getElementById(`shadow-card-${index}`);
+
+        // คำนวณตำแหน่งของเมาส์ที่สัมพันธ์กับการ์ด
         const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        const centerX = rect.width / 2;
-        const centerY = rect.height / 2;
+        const mouseX = event.clientX - rect.left; // ตำแหน่ง X ของเมาส์
+        const mouseY = event.clientY - rect.top;  // ตำแหน่ง Y ของเมาส์
 
-        const rotateX = ((centerY - y) / centerY) * 10;
-        const rotateY = ((centerX - x) / centerX) * -10;
+        // คำนวณการหมุนการ์ด
+        const rotateX = ((mouseY / rect.height) - 0.5) * 15; // หมุนตามแกน X
+        const rotateY = ((mouseX / rect.width) - 0.5) * -15; // หมุนตามแกน Y
 
-        card.style.zIndex = "2"; //  z-index เพื่อดึงการ์ดมาด้านหน้า
-        shadow.style.zIndex = "1"; // ให้เงาอยู่ด้านล่างเสมอ
+        // คำนวณการดันการ์ดไปตามตำแหน่งเมาส์
+        const scale = 1.05; // การขยายการ์ด
+        const translateZ = -30; // กดการ์ดให้ลึกลงในแนว Z
 
-        card.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.05)`;
-        shadow.style.transform = `perspective(2000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(-50px)`;
+        // เงา 3D
+        const shadowTranslateZ = -50 + (translateZ / 2); // ปรับให้เงาลึกขึ้นตามการขยายของการ์ด
 
+        // เพิ่มการดันการ์ดในทิศทางของเมาส์
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(${scale}) translateZ(${translateZ}px)`;
+        shadow.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateZ(${shadowTranslateZ}px)`;
 
-        // การตรวจสอบเพื่อลดการกระตุกเมื่อเมาส์อยู่บริเวณขอบ
-        card.style.willChange = 'transform';
-        shadow.style.willChange = 'transform';
     };
 
     const handleMouseLeave = (index) => {
         const card = document.getElementById(`project-card-${index}`);
-        card.style.transition = "transform 0.5s ease-out"; //  transition เพื่อความนุ่มนวล
         const shadow = document.getElementById(`shadow-card-${index}`);
-        card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)";
-        shadow.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(-50px)";
 
-        card.style.zIndex = "0";
-        shadow.style.zIndex = "0";
+        // รีเซ็ตการ์ดกลับไปที่ตำแหน่งเดิมเมื่อเมาส์ออกจากการ์ด
+        card.style.transition = "transform 0.3s ease-out, z-index 0s ease-out"; // transition เพื่อความนุ่มนวล
+        shadow.style.transition = "transform 0.3s ease-out"; //  transition ให้เงา
+
+        // รีเซ็ตการหมุนและขนาดการ์ด
+        card.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1) translateZ(0px)";
+        shadow.style.transform = "perspective(1000px) rotateX(0deg) rotateY(0deg) translateZ(-50px)"; // รีเซ็ตเงากลับ
+
     };
+
+
+
+
+
+
+
+
 
     return (
         <motion.div
