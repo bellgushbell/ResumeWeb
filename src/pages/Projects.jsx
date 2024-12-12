@@ -41,7 +41,7 @@ const Projects = () => {
             title: t("Individual Project: Eco Pandora Box"),
             description: t("Eco Pandora Box is a donation platform with tiered rewards(10, 100, 1000, 10000).Features include a visually engaging 3D box design, easy payment via card, QR, and slide- to - pay, reward delivery with email details, admin tools for managing items and deliveries, and a support chat for tracking rewards."),
             videoUrl: "https://drive.google.com/file/d/105lBWS3_Lwoa44qwMV7BJdMzDouXMxHt/preview",
-            weblink: "deploy process",
+            weblink: "https://ecopandoraboxpersonalproject-client.onrender.com",
             githubFrontend: "https://github.com/bellgushbell/EcoPandoraBoxPersonalProject-Client",
             githubBackend: "https://github.com/bellgushbell/EcoPandoraBoxPersonalProject-Server",
             libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "Axios", "NodeMailer", "Socket.io", "Stripe", "JsonWebToken", "Multer", "Prisma", "Cloudinary", "Sweetalert2", "React-Tostify", "bcryptjs", "nodemon", "ReactThreeDrei", "ReactThreeFiber", "gsap", "three", "Lottie-Loading"],
