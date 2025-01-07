@@ -119,7 +119,7 @@ const Projects = () => {
             <h3 className="flex justify-center font-semibold text-gray-800  text-3xl mb-10">
                 {t("PROJECTS")}
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-[1000px]">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-20 w-[350px] sm:w-[1000px]">
                 {projects.map((project, index) => (
                     <div
                         key={project.id}
