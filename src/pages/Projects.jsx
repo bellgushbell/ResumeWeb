@@ -6,7 +6,7 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: t("Individual Project: Phone Case E-Commerce"),
+            title: t("Project: Phone Case E-Commerce"),
             description: t("Oct 2024 - Oct 2024 • Built an e-commerce cart with real-time pricing, animations, password reset emails, protected routes, and Framer Motion for smooth transitions. Introduced slide-to-pay to prevent accidental payments, supporting mobile. Provided admin tools for product management, stock, payment approval, and analytics with charts for sales, abandoned carts")
             ,
             videoUrl: "https://drive.google.com/file/d/16_UQstLrwOUcKPPeLFzGCoCzT-7vKBe7/preview",
@@ -17,18 +17,18 @@ const Projects = () => {
         },
         {
             id: 2,
-            title: t("Group Project: Hotel Booking"),
+            title: t("Project: Hotel Booking"),
             description: t("Oct 2024 - Oct 2024 • Developed a booking system with location search, filters, price comparison, and discount codes. Integrated Stripe API for payments, Google Maps API for real-time positioning, and React Date Range for selecting check-in/out dates. Created a 3D card effect for promotions to boost engagement. Built image sliders with Swiper and Slick Carousel, customizing Toastify notifications with SweetAlert2. Enabled Google login, real-time admin chat using OAuth2 and Socket.io.")
             ,
             videoUrl: "https://drive.google.com/file/d/1RwZx_ffUNiGvvEVhMifri0uxIgOKhkcE/preview",
-            weblink: "https://hotel-book-client.onrender.com",
-            githubFrontend: "https://github.com/NuttavichBig/CC18-GroupProject-Client",
-            githubBackend: "https://github.com/NuttavichBig/CC18-GroupProject-Server",
+            weblink: "https://cc18-hotelproject-client.onrender.com",
+            githubFrontend: "https://github.com/bellgushbell/CC18-HotelProject-Client.git",
+            githubBackend: "https://github.com/bellgushbell/CC18-HotelProject-Server.git",
             libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "React-Tostify", "NodeMailer", "Cloudinary", "Prisma", "JsonWebToken", "Multer", "Bcryptjs", "Express", "joi", "Chart.js", "Sweetalert2", "Axios", "Moment", "React-Date-Range", "react-google-autocomplete", "slick-carousel", "socket.io-client", "swiper", "recharts", "Stripe", "OAth", "GoogleAPI", "react-places-autocomplete", "google-auth-library", "haversine-distance", "uuid"],
         },
         {
             id: 3,
-            title: t("Individual Project: Pokedex"),
+            title: t("Project: Pokedex"),
             description: t("A TypeScript-based Pokedex project that fetches Pokemon data from the PokéAPI and displays it in a user-friendly format, categorizing Pokemon by type and offering a fully responsive design.Developed using React, Sass, Tailwind CSS, and Axios for API calls and state management with Zustand. To enhance search and sorting capabilities, the project utilizes match- sorter and sort - by libraries, allowing users to filter and organize Pokemon by name, type, or other criteria. LocalForage is employed for local data storage."),
             videoUrl: "https://drive.google.com/file/d/15D3a7OywmEakiDb4Yb22mo4-YHc0SDqe/preview",
             weblink: "https://pokedexproject.onrender.com",
@@ -38,7 +38,7 @@ const Projects = () => {
         },
         {
             id: 4,
-            title: t("Individual Project: Eco Pandora Box"),
+            title: t("Project: Eco Pandora Box"),
             description: t("Eco Pandora Box is a donation platform with tiered rewards(10, 100, 1000, 10000).Features include a visually engaging 3D box design, easy payment via card, QR, and slide- to - pay, reward delivery with email details, admin tools for managing items and deliveries, and a support chat for tracking rewards."),
             videoUrl: "https://drive.google.com/file/d/105lBWS3_Lwoa44qwMV7BJdMzDouXMxHt/preview",
             weblink: "https://ecopandoraboxpersonalproject-client.onrender.com",
