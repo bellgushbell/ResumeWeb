@@ -46,6 +46,20 @@ function Experiences() {
                 t("Presented during Demo Day real projects like a mobile case shop and a hotel booking system, built with React and Prisma for seamless deployment."),
             ],
         },
+        {
+        id: 5,
+        title: t("Web Programmer"),
+        company: t("Swordsman3 Online & EXP Up Topup (by Panasia Entertainment)"),
+        year: t("Jan 2025 – Mar 2025"),
+        details: [
+            t("Developed a complete top-up website system for Swordsman3 Online using PHP (Laravel), MySQL, and Bootstrap 5."),
+            t("Implemented secure user registration and login system with email OTP verification and CSRF protection."),
+            t("Integrated official game SDK API for account creation, authentication, and top-up confirmation with MD5 signature."),
+            t("Added UX enhancements: real-time form validation, SweetAlert2 alerts, and localStorage form state saving."),
+            t("Handled edge cases for expired OTP, duplicate accounts, invalid sessions, and optimized the OTP countdown logic."),
+        ],
+        }
+
     ];
 
     return (

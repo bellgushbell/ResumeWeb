@@ -20,6 +20,7 @@ const skills = [
     { id: "14", name: "PHP", image: "/assets/php-icon.png" },
     { id: "15", name: "C", image: "/assets/c-icon.png" },
     { id: "16", name: "Python", image: "/assets/python-icon.png" },
+    { id: "17", name: "Laravel", image: "/assets/laravel-icon.png" },
 ];
 
 function Skills() {

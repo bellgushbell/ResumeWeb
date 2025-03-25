@@ -47,6 +47,63 @@ const Projects = () => {
             libraries: ["React", "Framer Motion", "Zustand", "Tailwind CSS", "Axios", "NodeMailer", "Socket.io", "Stripe", "JsonWebToken", "Multer", "Prisma", "Cloudinary", "Sweetalert2", "React-Tostify", "bcryptjs", "nodemon", "ReactThreeDrei", "ReactThreeFiber", "gsap", "three", "Lottie-Loading"],
 
         },
+     {
+            id: 5,
+            title: "Project: Game Swordsman3 Online",
+            description:
+                "Mar 2025 - Mar 2025 • Developed a cinematic gaming website for a mobile MMORPG using PHP as the backend. Integrated GSAP for animation, ScrollTrigger for scroll-based effects, and managed SEO meta updates dynamically with PHP. Added real-time news, event promotions, class preview with video/image switching, and GSAP-based loader with quote transitions. Connected to a MySQL database to render news and promotions with Axios and dynamic tab filters.",
+            videoUrl: "https://drive.google.com/file/d/1qBw4vC2yi5o-AwNiwSCAuqj3ZBDBuj6h/preview",
+            weblink: "https://swordsman3.com",
+            githubFrontend: "https://github.com/bellgushbell/swordsman-online",
+            libraries: [
+                "PHP", "GSAP", "ScrollTrigger", "SweetAlert2", "Axios", "Bootstrap 5",
+                "HTML5", "CSS3", "JavaScript", "jQuery", "Swiper.js", "MySQL"
+            ],
+            },
+
+        {
+            id: 6,
+            title: "Project: Preregister Swordsman3 Online",
+            description:
+                "Mar 2025 • Built an interactive pre-registration reward page for a mobile MMORPG using PHP and JavaScript. Features include GSAP and ScrollTrigger animations, dynamic SEO meta tags, responsive UI, and animated checkpoint-based reward progression. Developed a real-time registration counter synced with MySQL database, along with email registration, social sharing integration, and SweetAlert2 feedback system.",
+            videoUrl: "https://drive.google.com/file/d/1XK9oUL2RwQBHSzT7FzvpWFZHUZPU-3OW/preview",
+            weblink: "https://dev.stationidea.com",
+            githubFrontend: "https://github.com/bellgushbell/swordsman-online/blob/main/page/player/preregister-reward.php",
+            githubBackend: "",
+            libraries: [
+                "PHP", "JavaScript", "GSAP", "ScrollTrigger", "SweetAlert2", "Axios", "MySQL", "HTML5", "CSS3"
+            ],
+        },
+        {
+            id: 7,
+            title: "Project: CMS for Swordsman3 Online News",
+            description:
+                "Mar 2025 • Developed a custom content management system (CMS) for the News section of Swordsman3 Online using PHP and MySQL. Integrated SEO metadata input with live preview, Select2 keyword tagging, and role-based session access control. Added dynamic news filtering by category, image upload with preview, pagination, and modal-based image viewer. Ensured secure admin access and intuitive UX. Frontend designed with Bootstrap 5 and responsive layout.",
+            videoUrl: "https://drive.google.com/file/d/1z7GqYYzKOYFU3zG9atcvehTGieZtByiJ/preview", 
+            weblink: "https://swordsman3.com/admin",
+            githubFrontend: "https://github.com/bellgushbell/swordsman-online/tree/main/page/admin",
+            githubBackend: "",
+            libraries: [
+                "PHP", "JavaScript", "SweetAlert2", "MySQL", "Bootstrap 5", "HTML5", "CSS3", "jQuery", "Select2"
+            ],
+    },
+        {
+        id: 8,
+        title: "EXP TOPUP Swordsman3 Online",
+        description:
+            "Mar 2025 • Built a complete top-up website for the game Swordsman3 Online using Laravel and PHP. Implemented secure user registration and login with SDK API integration and OTP email verification. The registration system includes real-time validation, SweetAlert2 feedback, localStorage for input persistence, and session-based error handling. Backend manages user creation, authentication, and API signing with MD5. Designed with Bootstrap 5 for responsive UI and a smooth user experience. The top-up system is integrated with the game’s SDK and includes secure CSRF protection.",
+        videoUrl: "https://drive.google.com/file/d/1ItBAWDgY9AakIoVx04h_xNumWAWZ396D/preview",
+        weblink: "https://exptopupdev.stationidea.com/",
+        githubFrontend: "https://github.com/PhanuphongBunrot/swordsman3",
+        githubBackend: "https://github.com/PhanuphongBunrot/swordsman3",
+        libraries: [
+            "Laravel", "PHP", "JavaScript", "SweetAlert2", "MySQL", "Bootstrap 5", "HTML5", "CSS3", "jQuery"
+        ],
+        }
+
+
+
+
     ];
 
     const [selectedProject, setSelectedProject] = useState(null);
