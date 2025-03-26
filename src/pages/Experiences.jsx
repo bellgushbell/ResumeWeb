@@ -50,7 +50,7 @@ function Experiences() {
         id: 5,
         title: t("Web Programmer"),
         company: t("Swordsman3 Online & EXP Up Topup (by Panasia Entertainment)"),
-        year: t("Jan 2025 – Mar 2025"),
+        year: t("Jan 2025 – Present"),
         details: [
             t("Developed a complete top-up website system for Swordsman3 Online using PHP (Laravel), MySQL, and Bootstrap 5."),
             t("Implemented secure user registration and login system with email OTP verification and CSRF protection."),

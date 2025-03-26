@@ -21,6 +21,9 @@ const skills = [
     { id: "15", name: "C", image: "/assets/c-icon.png" },
     { id: "16", name: "Python", image: "/assets/python-icon.png" },
     { id: "17", name: "Laravel", image: "/assets/laravel-icon.png" },
+    { id: "18", name: "Express.js", image: "/assets/express.png" },
+    { id: "19", name: "Next.js", image: "/assets/nextjs.png" },
+    { id: "20", name: "RESTful API", image: "/assets/restapi.png" },
 ];
 
 function Skills() {
