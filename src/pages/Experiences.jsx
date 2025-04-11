@@ -47,23 +47,25 @@ function Experiences() {
             ],
         },
         {
-        id: 5,
-        title: t("Web Programmer"),
-        company: t("Swordsman3 Online & EXP Up Topup (by Panasia Entertainment)"),
-        year: t("Jan 2025 – Present"),
-        details: [
-            t("Developed a complete top-up website system for Swordsman3 Online using PHP (Laravel), MySQL, and Bootstrap 5."),
-            t("Implemented secure user registration and login system with email OTP verification and CSRF protection."),
-            t("Integrated official game SDK API for account creation, authentication, and top-up confirmation with MD5 signature."),
-            t("Added UX enhancements: real-time form validation, SweetAlert2 alerts, and localStorage form state saving."),
-            t("Handled edge cases for expired OTP, duplicate accounts, invalid sessions, and optimized the OTP countdown logic."),
-        ],
+            id: 5,
+            title: t("Web Programmer"),
+            company: t("Swordsman3 Online & EXP Up Topup (by Panasia Entertainment)"),
+            year: t("Jan 2025 – Present"),
+            details: [
+                t("Designed and implemented animated loader screen and interactive UI for Class Preview, Highlight, News, and Gallery sections of Swordsman3 Online homepage."),
+                t("Created dynamic preregister page with database-driven logic, progress bar with unlockable reward icons, email registration and social sharing integration, including file download and a 3-step milestone system to increase the counter."),
+                t("Developed a complete top-up website system for Swordsman3 Online using PHP (Laravel), MySQL, and Bootstrap 5."),
+                t("Integrated official game SDK API for account creation, authentication, and top-up confirmation with MD5 signature."),
+                t("Added UX enhancements: real-time form validation, SweetAlert2 alerts, and localStorage form state saving."),
+                t("Implemented secure user registration and login system with email OTP verification and CSRF protection, handling edge cases such as expired OTPs, duplicate accounts, invalid sessions, and optimizing OTP countdown logic.")
+            ],
+
         }
 
     ];
 
     return (
-        <div className="max-w-4xl mx-auto p-6">
+        <div id="Career" className="max-w-4xl mx-auto p-6">
             <h3 className="flex justify-center font-semibold text-gray-800 mb-10 text-4xl">
                 {t("Experiences")}
             </h3>

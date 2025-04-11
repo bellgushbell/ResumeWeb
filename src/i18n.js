@@ -65,6 +65,44 @@ const resources = {
             "Contact Information": "ช่องทางการติดต่อ",
             "Send Message To Me": "ส่งข้อความหาฉัน", "Name": "ชื่อ", "Email": "อีเมล", "Message": "ข้อความ", "SEND MESSAGE": "ส่งข้อความ",
 
+            "Developed a complete top-up website system for Swordsman3 Online using PHP (Laravel), MySQL, and Bootstrap 5.":
+                "พัฒนาเว็บไซต์ระบบเติมเงินแบบครบวงจรให้เกม Swordsman3 Online ด้วย PHP (Laravel), MySQL และ Bootstrap 5",
+
+            "Integrated official game SDK API for account creation, authentication, and top-up confirmation with MD5 signature.":
+                "ผสานการทำงานกับ SDK ของเกมอย่างเป็นทางการ เพื่อสร้างบัญชีผู้ใช้ ยืนยันตัวตน และยืนยันการเติมเงินด้วยลายเซ็น MD5",
+
+            "Added UX enhancements: real-time form validation, SweetAlert2 alerts, and localStorage form state saving.":
+                "เพิ่มประสบการณ์ใช้งานที่ดีขึ้นด้วยการตรวจสอบฟอร์มแบบเรียลไทม์ แจ้งเตือนด้วย SweetAlert2 และบันทึกสถานะฟอร์มด้วย localStorage",
+
+            "Implemented secure user registration and login system with email OTP verification and CSRF protection, handling edge cases such as expired OTPs, duplicate accounts, invalid sessions, and optimizing OTP countdown logic.":
+                "สร้างระบบสมัครและเข้าสู่ระบบที่ปลอดภัย พร้อมยืนยันตัวตนผ่านอีเมล OTP มีการป้องกัน CSRF และจัดการกรณีขอบเขต เช่น OTP หมดอายุ บัญชีซ้ำ เซสชันไม่ถูกต้อง และปรับปรุงระบบนับถอยหลัง OTP",
+
+            "Designed and implemented animated loader screen and interactive UI for Class Preview, Highlight, News, and Gallery sections of Swordsman3 Online homepage.":
+                "ออกแบบและพัฒนาอนิเมชันโหลดหน้า พร้อมส่วน UI แบบโต้ตอบ สำหรับหน้า Class Preview, Highlight, ข่าวสาร และแกลเลอรีของเว็บไซต์ Swordsman3 Online",
+
+            "Created dynamic preregister page with database-driven logic, progress bar with unlockable reward icons, email registration and social sharing integration, including file download and a 3-step milestone system to increase the counter.":
+                "พัฒนาหน้าลงทะเบียนล่วงหน้าแบบไดนามิก พร้อมระบบฐานข้อมูล, Progress Bar พร้อมไอคอนรางวัลปลดล็อก, ลงทะเบียนผ่านอีเมล, แชร์ผ่านโซเชียล, ดาวน์โหลดไฟล์ และระบบเก็บขั้นบรรลุ 3 ระดับเพื่อเพิ่มตัวเลขผู้ร่วมกิจกรรม",
+
+            "Mar 2025 - Mar 2025 • Developed a cinematic gaming website for a mobile MMORPG using PHP as the backend. Integrated GSAP for animation, ScrollTrigger for scroll-based effects, and managed SEO meta updates dynamically with PHP. Added real-time news, event promotions, class preview with video/image switching, and GSAP-based loader with quote transitions. Connected to a MySQL database to render news and promotions with Axios and dynamic tab filters.":
+                "มีนาคม 2025 • พัฒนาเว็บไซต์เกมมือถือแนว MMORPG รูปแบบเกม ด้วย PHP Java CSS เป็น Backend หลัก ผสาน GSAP สำหรับแอนิเมชัน และ ScrollTrigger เพื่อสร้างเอฟเฟกต์ตามการเลื่อนหน้า พร้อมจัดการข้อมูล SEO Meta แบบไดนามิกผ่าน PHP เพิ่มระบบแสดงข่าวสาร กิจกรรม โปรโมชั่นแบบเรียลไทม์ และหน้าแสดงคลาสพร้อมสลับวิดีโอ/รูปภาพ รวมถึงหน้ารอโหลดด้วย GSAP ที่มีคำคมเปลี่ยนแบบลื่นไหล เชื่อมต่อฐานข้อมูล MySQL เพื่อแสดงข่าวและโปรโมชันแบบเรียลไทม์ด้วย Axios และระบบแท็บกรองอัตโนมัติ",
+
+            "Mar 2025 • Developed an interactive pre-registration page for a mobile MMORPG using PHP and JavaScript. The page features a visually engaging checkpoint-based reward system with GSAP and ScrollTrigger animations, dynamic SEO meta tags, and a fully responsive UI. Implemented a real-time registration counter synced with a MySQL database, along with email registration, social sharing integration, and user feedback using SweetAlert2.":
+                "มีนาคม 2025 • พัฒนาหน้าลงทะเบียนล่วงหน้าแบบโต้ตอบสำหรับเกมมือถือแนว MMORPG โดยใช้ PHP และ JavaScript มาพร้อมระบบของรางวัลแบบปลดล็อกตามจุดเช็คพอยต์ แสดงผลด้วยแอนิเมชันจาก GSAP และ ScrollTrigger รองรับ SEO meta tag แบบไดนามิก และออกแบบให้รองรับการแสดงผลทุกอุปกรณ์ เสริมด้วย Progress Bar และระบบนับจำนวนผู้ลงทะเบียนแบบเรียลไทม์ที่เชื่อมต่อกับฐานข้อมูล MySQL พร้อมฟีเจอร์ลงทะเบียนผ่านอีเมล แชร์ผ่านโซเชียล และระบบแจ้งเตือนผู้ใช้ด้วย SweetAlert2",
+
+            "Apr 2025 • Developed a custom content management system (CMS) for the News section of Swordsman3 Online using PHP and MySQL. Integrated SEO metadata input with live preview, Select2 keyword tagging, and role-based session access control. Added dynamic news filtering by category, image upload with preview, pagination, and modal-based image viewer. Ensured secure admin access and intuitive UX. Frontend designed with Bootstrap 5 and responsive layout.":
+                "เมษายน 2025 • พัฒนาระบบจัดการเนื้อหา (CMS) สำหรับหมวดข่าวของเกม Swordsman3 Online ด้วย PHP และ MySQL รองรับการกรอกข้อมูล SEO พร้อมพรีวิวแบบเรียลไทม์ ระบบแท็กคีย์เวิร์ดด้วย Select2 และควบคุมสิทธิ์การเข้าถึงตามบทบาทผู้ใช้ เพิ่มฟีเจอร์กรองข่าวตามหมวดหมู่ อัปโหลดภาพพร้อมพรีวิว แสดงผลแบบแบ่งหน้า (Pagination) และดูภาพผ่านโมดัลแบบโต้ตอบ ออกแบบหน้าแอดมินให้ปลอดภัย ใช้งานง่าย และออกแบบ Frontend ด้วย Bootstrap 5 ที่รองรับทุกขนาดหน้าจอ",
+
+            "Apr 2025 • Built a complete top-up website for the game Swordsman3 Online using Laravel and PHP. Implemented secure user registration and login with SDK API integration and OTP email verification. The registration system includes real-time validation, SweetAlert2 feedback, localStorage for input persistence, and session-based error handling. Backend manages user creation, authentication, and API signing with MD5. Designed with Bootstrap 5 for responsive UI and a smooth user experience. The top-up system is integrated with the game’s SDK and includes secure CSRF protection.":
+                "เมษายน 2025 • พัฒนาเว็บไซต์ระบบเติมเงินแบบครบวงจรสำหรับเกม Swordsman3 Online ด้วย Laravel และ PHP พร้อมระบบสมัครสมาชิกและเข้าสู่ระบบที่ปลอดภัย รวมถึงระบบยืนยันตัวตนผ่านอีเมลด้วย OTP ผสานการทำงานกับ SDK ของเกมโดยตรง มีระบบตรวจสอบข้อมูลแบบเรียลไทม์ แจ้งเตือนผู้ใช้ด้วย SweetAlert2 และบันทึกข้อมูลฟอร์มด้วย localStorage พร้อมจัดการข้อผิดพลาดที่เกิดจากเซสชันฝั่งผู้ใช้ ฝั่ง Backend ทำการสร้างบัญชี การยืนยันตัวตน และการลงนาม API ด้วย MD5 ออกแบบ UI ด้วย Bootstrap 5 ให้รองรับการแสดงผลทุกอุปกรณ์ มอบประสบการณ์ใช้งานที่ลื่นไหล และระบบเติมเงินยังมีการป้องกัน CSRF อย่างปลอดภัย",
+
+            "Project: Phone Case E-Commerce": " ร้านขายเคสมือถือ",
+            "Project: Hotel Booking": " ระบบจองโรงแรม",
+            "Project: Pokedex": " โปเกเด็กซ์ (สารานุกรมโปเกมอน)",
+            "Project: Eco Pandora Box": " กล่องบริจาครักษ์โลก",
+            "Project: Game Swordsman3 Online": " เว็บไซต์เกม Swordsman3 Online",
+            "Project: Preregister Swordsman3 Online": " หน้าลงทะเบียนล่วงหน้า Swordsman3",
+            "Project: CMS for Swordsman3 Online News": " CMS สำหรับ Swordsman3 Online",
+            "EXP TOPUP Swordsman3 Online": " ระบบเติมเงิน EXP TOPUP"
 
 
 

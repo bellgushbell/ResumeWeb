@@ -113,7 +113,7 @@ const App = () => {
         style={{
           width: "100%",
           height: "100vh",
-          position: "fixed", // Fixed เพื่อให้คลุมทั้งหน้าจอ
+          position: "fixed" , // Fixed เพื่อให้คลุมทั้งหน้าจอ
           top: 0,
           left: 0,
           zIndex: -1,
