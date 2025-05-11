@@ -65,7 +65,7 @@ const Projects = () => {
                 title: t("Project: Preregister Swordsman3 Online"),
                 description: t("Mar 2025 • Developed an interactive pre-registration page for a mobile MMORPG using PHP and JavaScript. The page features a visually engaging checkpoint-based reward system with GSAP and ScrollTrigger animations, dynamic SEO meta tags, and a fully responsive UI. Implemented a real-time registration counter synced with a MySQL database, along with email registration, social sharing integration, and user feedback using SweetAlert2."),
                 videoUrl: "https://drive.google.com/file/d/1XK9oUL2RwQBHSzT7FzvpWFZHUZPU-3OW/preview",
-                weblink: "https://dev.stationidea.com",
+                weblink: "https://dev.stationidea.com/page/player/preregister-reward.php",
                 githubFrontend: "https://github.com/bellgushbell/swordsman-online/blob/main/page/player/preregister-reward.php",
                 githubBackend: "",
                 libraries: [
@@ -78,7 +78,8 @@ const Projects = () => {
                 title: t("Project: CMS for Swordsman3 Online News"),
                 description: t("Apr 2025 • Developed a custom content management system (CMS) for the News section of Swordsman3 Online using PHP and MySQL. Integrated SEO metadata input with live preview, Select2 keyword tagging, and role-based session access control. Added dynamic news filtering by category, image upload with preview, pagination, and modal-based image viewer. Ensured secure admin access and intuitive UX. Frontend designed with Bootstrap 5 and responsive layout."),
                 videoUrl: "https://drive.google.com/file/d/1z7GqYYzKOYFU3zG9atcvehTGieZtByiJ/preview",
-                weblink: "https://cms.stationidea.com/",
+                weblink: "https://dev.stationidea.com",
+                // weblink: "https://cms.stationidea.com",
                 githubFrontend: "https://github.com/bellgushbell/CMS-swordsman3-FrontEnd",
                 githubBackend: "https://github.com/bellgushbell/CMS-swordsman3-BackEnd",
                 
