@@ -78,7 +78,7 @@ const Projects = () => {
                 title: t("Project: CMS for Swordsman3 Online News"),
                 description: t("Apr 2025 • Developed a custom content management system (CMS) for the News section of Swordsman3 Online using PHP and MySQL. Integrated SEO metadata input with live preview, Select2 keyword tagging, and role-based session access control. Added dynamic news filtering by category, image upload with preview, pagination, and modal-based image viewer. Ensured secure admin access and intuitive UX. Frontend designed with Bootstrap 5 and responsive layout."),
                 videoUrl: "https://drive.google.com/file/d/1z7GqYYzKOYFU3zG9atcvehTGieZtByiJ/preview",
-                // weblink: "https://cms.stationidea.com",
+                weblink: "https://cms.stationidea.com",
                 // weblink: "https://cms.stationidea.com",
                 githubFrontend: "https://github.com/bellgushbell/CMS-swordsman3-FrontEnd",
                 githubBackend: "https://github.com/bellgushbell/CMS-swordsman3-BackEnd",
@@ -93,7 +93,7 @@ const Projects = () => {
                 title: t("EXP TOPUP Swordsman3 Online"),
                 description: t("Apr 2025 • Built a complete top-up website for the game Swordsman3 Online using Laravel and PHP. Implemented secure user registration and login with SDK API integration and OTP email verification. The registration system includes real-time validation, SweetAlert2 feedback, localStorage for input persistence, and session-based error handling. Backend manages user creation, authentication, and API signing with MD5. Designed with Bootstrap 5 for responsive UI and a smooth user experience. The top-up system is integrated with the game’s SDK and includes secure CSRF protection."),
                 videoUrl: "https://drive.google.com/file/d/1ItBAWDgY9AakIoVx04h_xNumWAWZ396D/preview",
-                // weblink: "https://exptopupdev.stationidea.com/",
+                weblink: "https://exptopupdev.stationidea.com/",
                 githubFrontend: "https://github.com/PhanuphongBunrot/swordsman3",
                 githubBackend: "https://github.com/PhanuphongBunrot/swordsman3",
                 libraries: [
